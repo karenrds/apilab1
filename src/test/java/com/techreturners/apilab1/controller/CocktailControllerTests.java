@@ -15,7 +15,7 @@ public class CocktailControllerTests {
     private MockMvc mockMvcController;
 
     @Test
-    public void testGetCoffee() throws Exception {
+    public void testGetCocktail() throws Exception {
         String expectedContent = "Popular Cocktails";
         this.mockMvcController.perform(
                         MockMvcRequestBuilders.get("/cocktails"))
@@ -24,7 +24,7 @@ public class CocktailControllerTests {
     }
 
     @Test
-    public void testGetCoffeeWithoutRequestParams() throws Exception {
+    public void testGetCocktailWithoutRequestParams() throws Exception {
         String expectedContent = "Pina Colada";
         this.mockMvcController.perform(
                         MockMvcRequestBuilders.get("/cocktail"))
